@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(230, 255, 230);
+    color: rgb(100, 200, 100);
+    font-family: Arial;
+    margin: 0px;
+}
+
+header {
+    background-color: rgb(100, 200, 100);
+    color: rgb(255, 255, 255);
+    padding: 15px; 
+    font-size: 16pt;"
+}
+
+footer {
+    background-color: rgb(100, 200, 100);
+    color: rgb(255, 255, 255);
+    padding: 15px; 
+    font-size: 16pt;
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(100, 200, 100)
+}
+
