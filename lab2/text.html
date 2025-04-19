@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Генерозов Сергей Евгеньевич. Оформление текста</title>
+        <link rel="stylesheet" href="../main.css">
+        <style>
+        
+        h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        /* Оформление первой песни */
+
+        .DropFirstSong {
+            background-color: rgb(255, 230, 230);;
+            color: rgb(220, 0, 0);
+            font-weight: bold;
+            font-style: italic;
+            margin: 0;
+            line-height: 1.5;
+            font-size: 20px;
+        }
+
+        .FirstVerseFirstSong {
+            background-color: rgb(255, 230, 230);
+            color: red;
+            text-shadow: 4px 3px 2px rgba(255, 0, 0, 0.5);
+            margin: 0;
+            line-height: 1.5;
+            font-size: 20px;
+        }
+
+        /* Оформление второй песни */
+
+        .IntroSecondSong {
+            background-color: rgb(255, 255, 230);;
+            color: rgb(190, 190, 0);
+            font-style: italic;
+            margin: 0;
+            line-height: 1.5;  
+            font-size: 17px; 
+            text-align: right;
+        }
+
+        .DropSecondSong {
+            background-color: rgb(255, 255, 230);;
+            color: rgb(190, 190, 0);
+            font-weight: bold;
+            font-style: italic;
+            margin: 0;
+            line-height: 1.5;  
+            font-size: 17px; 
+            text-align: right;
+        }
+
+        .FirstVerseSecondSong {
+            background-color: rgb(255, 255, 230);;
+            color: rgb(190, 190, 0);
+            text-shadow: 4px 3px 2px rgba(190, 190, 0, 0.5);
+            margin: 0;
+            line-height: 1.5;  
+            font-size: 17px; 
+            text-align: right;
+        }
+
+        .PreDropSecondSong {
+            background-color: rgb(255, 255, 230);;
+            color: rgb(190, 190, 0);
+            font-style: italic;
+            margin: 0;
+            line-height: 1.5;  
+            font-size: 17px; 
+            text-align: right;
+        }
+
+        .SecondVerseSecondSong {
+            background-color: rgb(255, 255, 230);;
+            color: rgb(190, 190, 0);
+            text-shadow: 4px 3px 2px rgba(190, 190, 0, 0.5);
+            margin: 0;
+            line-height: 1.5;  
+            font-size: 17px; 
+            text-align: right;
+        }
+
+        /* Оформление третьей песни */
+
+        .DropThirdSong {
+            background-color: rgb(255, 240, 255);
+            color: rgb(200, 100, 200);
+            font-weight: bold;
+            font-style: italic;
+            margin: 0;
+            line-height: 1.2;  
+            text-align: center;
+            font-size: 19px; 
+        }
+
+        .FirstVerseThirdSong {
+            background-color: rgb(255, 240, 255);
+            color: rgb(200, 100, 200);
+            text-shadow: 4px 3px 2px rgba(200, 100, 200, 0.5);
+            margin: 0;
+            line-height: 1.2;  
+            text-align: center;
+            font-size: 19px; 
+        }
+
+        /* Оформление четвёртой песни */
+
+        .DropFourthSong {
+            background-color: rgb(220, 255, 255);
+            color: rgb(100, 200, 200);
+            font-weight: bold;
+            font-style: italic;
+            margin: 0;
+            line-height: 1.8;  
+            text-align: justify;
+            font-size: 21px; 
+        }
+
+        .FirstVerseFourthSong {
+            background-color: rgb(220, 255, 255);
+            color: rgb(100, 200, 200);
+            text-shadow: 4px 3px 2px rgba(100, 200, 200, 0.5);
+            margin: 0;
+            line-height: 1.8; 
+            text-align: justify; 
+            font-size: 21px; 
+        }
+
+        /* Оформление пятой песни */
+
+        .DropFifthSong {
+            background-color: #e6f7ff;
+            color: rgb(0, 130, 200);
+            font-weight: bold;
+            font-style: italic;
+            margin: 0;
+            line-height: 1.5;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .FirstVerseFifthSong {
+            background-color: #e6f7ff;
+            color: rgb(0, 130, 200);
+            text-shadow: 4px 3px 2px rgba(0, 130, 200, 0.5);
+            margin: 0;
+            line-height: 1.5;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .SecondVerseFifthSong {
+            background-color: #e6f7ff;
+            color: rgb(0, 130, 200);
+            text-shadow: 4px 3px 2px rgba(0, 130, 200, 0.5);
+            margin: 0;
+            line-height: 1.5;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        /* Оформление шестой песни */
+
+        .DropSixthSong {
+            background-color: #f0f8ff;
+            color: rgb(50, 100, 150);
+            font-weight: bold;
+            font-style: italic;
+            margin: 0;
+            line-height: 1.6;
+            font-size: 17px;
+        }
+  
+        .FirstVerseSixthSong {
+            background-color: #f0f8ff;
+            color: rgb(50, 100, 150);
+            text-shadow: 4px 3px 2px rgba(50, 100, 150, 0.5);
+            margin: 0;
+            line-height: 1.6;
+            font-size: 17px;
+        }
+
+        .SecondVerseSixthSong {
+            background-color: #f0f8ff;
+            color: rgb(50, 100, 150);
+            text-shadow: 4px 3px 2px rgba(50, 100, 150, 0.5);
+            margin: 0;
+            line-height: 1.6;
+            font-size: 17px;
+        }
+  
+  
+        .IntroSixthSong {
+            background-color: #f0f8ff;
+            color: rgb(50, 100, 150);
+            text-shadow: 2px 2px 0px rgba(50, 100, 150, 0.5);
+            font-style: italic;
+            margin: 0;
+            line-height: 1.6;
+            font-size: 17px;
+        }
+
+        /* Оформление седьмой песни */
+
+        .DropSeventhSong {
+            background-color: rgb(255, 235, 200);
+            color: rgb(200, 100, 0);
+            font-weight: bold;
+            font-style: italic;
+            margin: 0;
+            line-height: 2;
+            font-size: 18px;
+        }
+
+        .FirstVerseSeventhSong {
+            background-color: rgb(255, 235, 200);
+            color: rgb(200, 100, 0);
+            text-shadow: 4px 3px 2px rgba(200, 100, 0, 0.5);
+            margin: 0;
+            line-height: 2;
+            font-size: 18px;
+        }
+
+        .SecondVerseSeventhSong {
+            background-color: rgb(255, 235, 200);
+            color: rgb(200, 100, 0);
+            text-shadow: 5px 4px 4px rgba(200, 100, 0, 0.5);
+            margin: 0;
+            line-height: 2;
+            font-size: 18px;
+        }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            НГТУ, ФБ, Лабораторная работа 2
+        </header>
+
+        <main>
+            <h1>Спасибо. Прощай.</h1>
+
+            <h2>Жалкий мир</h2>
+
+                <p class="DropFirstSong">[Припев]</p>
+                <p class="DropFirstSong">Это жалкий мир, в котором</p>
+                <p class="DropFirstSong">Нету смысла долго жить.</p>
+                <p class="DropFirstSong">Я устал и так расстроен —</p>
+                <p class="DropFirstSong">Жду, пока смерть добежит.</p>
+                <p class="DropFirstSong">Жалкий мир, жалкий я,</p>
+                <p class="DropFirstSong">Счастье — миф,</p>
+                <p class="DropFirstSong">Как и друзья.</p>
+                <p class="DropFirstSong">Щас бы думать, что всё супер,</p>
+                <p class="DropFirstSong">А ещё любить тебя.</p>
+
+                <p class="FirstVerseFirstSong">[Куплет]</p>
+                <p class="FirstVerseFirstSong">Очень сложно быть не кислым,</p>
+                <p class="FirstVerseFirstSong">Когда батя наркоман,</p>
+                <p class="FirstVerseFirstSong">Когда ты вчера отчислен,</p>
+                <p class="FirstVerseFirstSong">А в штанах пустой карман.</p>
+                <p class="FirstVerseFirstSong">Ночью слышу сотню мыслей —</p>
+                <p class="FirstVerseFirstSong">Спорю с ними вместо сна.</p>
+                <p class="FirstVerseFirstSong">Покажите мне, где мыло</p>
+                <p class="FirstVerseFirstSong">И дешёвая петля.</p>
+                <p class="FirstVerseFirstSong">Всех в округе ненавижу,</p>
+                <p class="FirstVerseFirstSong">Заглушаю их музлом.</p>
+                <p class="FirstVerseFirstSong">Я романтик — очевидно,</p>
+                <p class="FirstVerseFirstSong">Но мне так не повезло.</p>
+                <p class="FirstVerseFirstSong">Что ж, попробую влюбиться,</p>
+                <p class="FirstVerseFirstSong">Чтоб забыть про это зло.</p>
+                <p class="FirstVerseFirstSong">Пойду в парк искать девицу</p>
+                <p class="FirstVerseFirstSong">И не думать снова, что</p>
+
+                <p class="DropFirstSong">[Припев]</p>
+                <p class="DropFirstSong">Это жалкий мир, в котором</p>
+                <p class="DropFirstSong">Нету смысла долго жить.</p>
+                <p class="DropFirstSong">Я устал и так расстроен —</p>
+                <p class="DropFirstSong">Жду, пока смерть добежит.</p>
+                <p class="DropFirstSong">Жалкий мир, жалкий я,</p>
+                <p class="DropFirstSong">Счастье — миф,</p>
+                <p class="DropFirstSong">Как и друзья.</p>
+                <p class="DropFirstSong">Щас бы думать, что всё супер,</p>
+                <p class="DropFirstSong">А ещё любить себя.</p>
+
+            <h2>Искры</h2>
+
+                <p class="IntroSecondSong">[Вступление]</p>
+                <p class="IntroSecondSong">Открывая глаза, вижу ангела на земле,</p>
+                <p class="IntroSecondSong">Чья краса, словно пламя огня во тьме,</p>
+                <p class="IntroSecondSong">Влечёт к себе, и жаль, что мне</p>
+                <p class="IntroSecondSong">Нельзя трогать, но можно смотреть</p>
+
+                <p class="DropSecondSong">[Припев]</p> 
+                <p class="DropSecondSong">На искры,</p>
+                <p class="DropSecondSong">Что сожгут меня быстро,</p>
+                <p class="DropSecondSong">Но мне слышался-слышался,</p>
+                <p class="DropSecondSong">Слышался вызов где-то в груди,</p>
+                <p class="DropSecondSong">Мол: «Чувак, подойди» —</p>
+                <p class="DropSecondSong">Я, похоже, влюбился.</p>
+
+                <p class="FirstVerseSecondSong">[Куплет]</p>
+                <p class="FirstVerseSecondSong">Словно скульптура ренессанса, прекрасна ты,</p>
+                <p class="FirstVerseSecondSong">И от твоей красоты</p>
+                <p class="FirstVerseSecondSong">Уже цветут цветы,</p>
+                <p class="FirstVerseSecondSong">Хоть и не тут, где мы —</p>
+                <p class="FirstVerseSecondSong">Так давай за мной:</p>
+                <p class="FirstVerseSecondSong">Я покажу сады,</p>
+                <p class="FirstVerseSecondSong">Где растут пионы — теперь твои.</p>
+                <p class="FirstVerseSecondSong">Я бы дарил миллионы, лишь бы быть одним</p>
+                <p class="FirstVerseSecondSong">Из тех, кто видел, как твои глаза блестели,</p>
+                <p class="FirstVerseSecondSong">Когда я говорил:</p>
+
+                <p class="PreDropSecondSong">[Переход]</p>
+                <p class="PreDropSecondSong">„Открывая глаза, вижу ангела на земле,</p>
+                <p class="PreDropSecondSong">Чья краса, словно пламя огня во тьме,</p>
+                <p class="PreDropSecondSong">Беспощадно влечёт к себе —</p>
+                <p class="PreDropSecondSong">Нельзя трогать, но можно смотреть</p>
+
+                <p class="DropSecondSong">[Припев]</p> 
+                <p class="DropSecondSong">На искры,</p>
+                <p class="DropSecondSong">Что сожгут меня быстро,</p>
+                <p class="DropSecondSong">Но мне слышался-слышался,</p>
+                <p class="DropSecondSong">Слышался вызов где-то в груди,</p>
+                <p class="DropSecondSong">Мол: «Чувак, подойди» —</p>
+                <p class="DropSecondSong">Я, похоже, влюбился.</p>
+
+                <p class="SecondVerseSecondSong">[Куплет]</p>
+                <p class="SecondVerseSecondSong">В девочку-пришельца, не такую как все:</p>
+                <p class="SecondVerseSecondSong">С ней беседы интересней, чем с соседом, вдвойне,</p>
+                <p class="SecondVerseSecondSong">Мне так хочется прижать её поближе к себе</p>
+                <p class="SecondVerseSecondSong">И на ухо прошептать: «Ты скоро станешь моей»,</p>
+                <p class="SecondVerseSecondSong">И сомневаюсь, что мне</p>
+                <p class="SecondVerseSecondSong">Отказ удастся получить</p>
+                <p class="SecondVerseSecondSong">От вас, сударыня. Ключи</p>
+                <p class="SecondVerseSecondSong">Лежат под ковриком — держи,</p>
+                <p class="SecondVerseSecondSong">Открой сердечко — там</p>
+                <p class="SecondVerseSecondSong">Ищи моё признание в любви тебе:</p>
+                <p class="SecondVerseSecondSong">Стихи те, где написано красиво,</p>
+                <p class="SecondVerseSecondSong">Чтоб стихли все, ведь твои</p>
+
+                <p class="DropSecondSong">[Припев]</p>
+                <p class="DropSecondSong">Искры</p>
+                <p class="DropSecondSong">Уже сожгли меня быстро,</p>
+                <p class="DropSecondSong">И мне слышался-слышался</p>
+                <p class="DropSecondSong">Слышался вызов где-то в груди,</p>
+                <p class="DropSecondSong">Мол: «Чувак, подойди» —</p>
+                <p class="DropSecondSong">Я, похоже, влюбился,</p>
+                <p class="DropSecondSong">И твои искры</p>
+                <p class="DropSecondSong">Вдруг сожгли меня быстро,</p>
+                <p class="DropSecondSong">И мне слышался-слышался</p>
+                <p class="DropSecondSong">Слышался вызов где-то в груди,</p>
+                <p class="DropSecondSong">Мол: «Чувак, подойди» —</p>
+                <p class="DropSecondSong">Я, похоже, влюбился…</p>
+
+            <h2>Я тебя люблю</h2>
+
+                <p class="DropThirdSong">[Припев]</p>
+                <p class="DropThirdSong">«Я тебя люблю-люблю-люблю —</p>
+                <p class="DropThirdSong">Честно говорю — Love you, love you».</p>
+                <p class="DropThirdSong">Взгляд я твой ловлю-ловлю-ловлю —</p>
+                <p class="DropThirdSong">Грусть равна нулю-нулю-нулю.</p>
+                <p class="DropThirdSong">«Я тебя люблю-люблю-люблю —</p>
+                <p class="DropThirdSong">Честно говорю — Love you, love you».</p>
+                <p class="DropThirdSong">Взгляд я твой ловлю-ловлю-ловлю —</p>
+                <p class="DropThirdSong">Грусть равна нулю-нулю-нулю.</p>
+                
+                <p class="FirstVerseThirdSong">[Куплет]</p>
+                <p class="FirstVerseThirdSong">Прилипающий припев,</p>
+                <p class="FirstVerseThirdSong">Как твои глаза.</p>
+                <p class="FirstVerseThirdSong">В моей голове чудеса —</p>
+                <p class="FirstVerseThirdSong">Не могу устать.</p>
+                <p class="FirstVerseThirdSong">«Я люблю тебя — написал</p>
+                <p class="FirstVerseThirdSong">На своей стене в ВК —</p>
+                <p class="FirstVerseThirdSong">Насовсем и навсегда.</p>
+                <p class="FirstVerseThirdSong">Надоем — убью себя».</p>
+                <p class="FirstVerseThirdSong">Розовые линзы заменили</p>
+                <p class="FirstVerseThirdSong">Одноразовые лица —</p>
+                <p class="FirstVerseThirdSong">Я могу не притворяться </p>
+                <p class="FirstVerseThirdSong">И не злиться на себя, что я притворщик и тупица.</p>
+                <p class="FirstVerseThirdSong">Я хочу лишь, чтоб улыбка не сползала с твоих уст,</p>
+                <p class="FirstVerseThirdSong">И потому я тихо, шёпотом на ушко, поклянусь</p>
+                <p class="FirstVerseThirdSong">В том, что</p>
+                
+                <p class="DropThirdSong">[Припев]</p>
+                <p class="DropThirdSong">«Я тебя люблю-люблю-люблю —</p>
+                <p class="DropThirdSong">Честно говорю — Love you, love you».</p>
+                <p class="DropThirdSong">Взгляд я твой ловлю-ловлю-ловлю —</p>
+                <p class="DropThirdSong">Грусть равна нулю-нулю-нулю.</p>
+                
+                <p class="DropThirdSong">[Припев]</p>
+                <p class="DropThirdSong">«Я тебя люблю-люблю-люблю» —</p>
+                <p class="DropThirdSong">Честно говорю — «Love you, love you».</p>
+                <p class="DropThirdSong">Взгляд я твой ловлю-ловлю-ловлю —</p>
+                <p class="DropThirdSong">Грусть равна нулю-нулю-нулю.</p>
+
+            <h2>Без тебя</h2>
+
+                <p class="DropFourthSong">[Припев]</p>
+                <p class="DropFourthSong">Без тебя мир потускнеет,</p>
+                <p class="DropFourthSong">Мне не станет веселее,</p>
+                <p class="DropFourthSong">Никогда уже,</p>
+                <p class="DropFourthSong">Никогда уже,</p>
+                <p class="DropFourthSong">Никогда.</p>
+                <p class="DropFourthSong">Я устану от людей</p>
+                <p class="DropFourthSong">И лишь уставлю взгляд на стены,</p>
+                <p class="DropFourthSong">Потеряв себя,</p>
+                <p class="DropFourthSong">Потеряв себя,</p>
+                <p class="DropFourthSong">Потеряв.</p>
+                <p class="DropFourthSong">Навсегда лишусь рассудка,</p>
+                <p class="DropFourthSong">Ведь тащусь от того факта,</p>
+                <p class="DropFourthSong">Что ты просто существуешь,</p>
+                <p class="DropFourthSong">И мне большего не надо.</p>
+                <p class="DropFourthSong">Без тебя мир потускнеет,</p>
+                <p class="DropFourthSong">Навсегда стану мрачнее,</p>
+                <p class="DropFourthSong">Потеряв тебя,</p>
+                <p class="DropFourthSong">Потеряв тебя,</p>
+                <p class="DropFourthSong">Потеряв.</p>
+                
+                <p class="FirstVerseFourthSong">[Куплет]</p>
+                <p class="FirstVerseFourthSong">Я люблю тебя так сильно:</p>
+                <p class="FirstVerseFourthSong">Будто действие токсина,</p>
+                <p class="FirstVerseFourthSong">Заражаешь мои мысли,</p>
+                <p class="FirstVerseFourthSong">Мои сны и мои чувства.</p>
+                <p class="FirstVerseFourthSong">Я хочу быть к тебе близко,</p>
+                <p class="FirstVerseFourthSong">Но ты стала далека.</p>
+                <p class="FirstVerseFourthSong">Твои искры превратились</p>
+                <p class="FirstVerseFourthSong">В тот пожар, что сжёг меня.</p>
+                <p class="FirstVerseFourthSong">Кто же знал, что ты уйдёшь.</p>
+                <p class="FirstVerseFourthSong">Моя кожа всё бледнеет,</p>
+                <p class="FirstVerseFourthSong">И я помню те мгновения,</p>
+                <p class="FirstVerseFourthSong">Когда утром в понедельник</p>
+                <p class="FirstVerseFourthSong">Мы смотрели друг на друга</p>
+                <p class="FirstVerseFourthSong">С фото профилей в ВК, а щас</p>
+                <p class="FirstVerseFourthSong">Я так хочу забыть тебя,</p>
+                <p class="FirstVerseFourthSong">Но есть одна проблема:</p>
+                
+                <p class="DropFourthSong">[Припев]</p>
+                <p class="DropFourthSong">Без тебя мир потускнел,</p>
+                <p class="DropFourthSong">И мне не станет веселее,</p>
+                <p class="DropFourthSong">Никогда уже,</p>
+                <p class="DropFourthSong">Никогда уже,</p>
+                <p class="DropFourthSong">Никогда.</p>
+                <p class="DropFourthSong">Я устал от всех людей</p>
+                <p class="DropFourthSong">И лишь уставил взгляд на стены,</p>
+                <p class="DropFourthSong">Потеряв себя,</p>
+                <p class="DropFourthSong">Потеряв себя,</p>
+                <p class="DropFourthSong">Потеряв.</p>
+                <p class="DropFourthSong">Навсегда лишён рассудка,</p>
+                <p class="DropFourthSong">Ведь тащился с того факта,</p>
+                <p class="DropFourthSong">Что ты просто существуешь,</p>
+                <p class="DropFourthSong">Что мне большего не надо.</p>
+                <p class="DropFourthSong">Без тебя мир потускнел,</p>
+                <p class="DropFourthSong">И навсегда стал я мрачнее,</p>
+                <p class="DropFourthSong">Потеряв тебя,</p>
+                <p class="DropFourthSong">Потеряв тебя,</p>
+                <p class="DropFourthSong">Потеряв.</p>
+
+            <h2>Сны</h2>
+
+                <p class="DropFifthSong">[Припев]</p>
+                <p class="DropFifthSong">Ты снова снилась мне.</p>
+                <p class="DropFifthSong">Это из-за сил извне,</p>
+                <p class="DropFifthSong">Или я надумал сам,</p>
+                <p class="DropFifthSong">Что ты осталась в голове?</p>
+                <p class="DropFifthSong">Ты снова снилась мне</p>
+                <p class="DropFifthSong">В сладком сне,</p>
+                <p class="DropFifthSong">Там мы были радостней, чем здесь,</p>
+                <p class="DropFifthSong">И это даже не конец, ведь</p>
+                <p class="DropFifthSong">Ты снова снилась мне.</p>
+                <p class="DropFifthSong">Это из-за сил извне,</p>
+                <p class="DropFifthSong">Или я надумал сам,</p>
+                <p class="DropFifthSong">Что ты осталась в голове?</p>
+                <p class="DropFifthSong">Ты снова снилась мне</p>
+                <p class="DropFifthSong">В сладком сне,</p>
+                <p class="DropFifthSong">Там мы были радостней, чем здесь,</p>
+                <p class="DropFifthSong">И это даже не конец.</p>
+                
+                <p class="FirstVerseFifthSong">[Куплет]</p>
+                <p class="FirstVerseFifthSong">Это жалкий мир, в котором</p>
+                <p class="FirstVerseFifthSong">Нет ни смысла ни тебя.</p>
+                <p class="FirstVerseFifthSong">Я бежал бы по сугробам,</p>
+                <p class="FirstVerseFifthSong">Только чтоб найти тебя.</p>
+                <p class="FirstVerseFifthSong">Меня жарят ровно в полночь</p>
+                <p class="FirstVerseFifthSong">Сотни мыслей про тебя.</p>
+                <p class="FirstVerseFifthSong">Скоро я сойду с ума,</p>
+                <p class="FirstVerseFifthSong">Скован, будто на цепях.</p>
+                <p class="FirstVerseFifthSong">Снова утром я надеюсь не проснуться,</p>
+                <p class="FirstVerseFifthSong">Ведь во снах с тобой мне круто,</p>
+                <p class="FirstVerseFifthSong">Танцевал с тобой там долго</p>
+                <p class="FirstVerseFifthSong">Я под ЛСП, но что-то как-то пусто —</p>
+                <p class="FirstVerseFifthSong">Это чёртово лукавство</p>
+                <p class="FirstVerseFifthSong">После месяцев разлуки</p>
+                <p class="FirstVerseFifthSong">Начинает растворяться.</p>
+                <p class="FirstVerseFifthSong">Разорваться, испариться,</p>
+                <p class="FirstVerseFifthSong">Чтобы больше не стыдиться</p>
+                <p class="FirstVerseFifthSong">Самого себя, который</p>
+                <p class="FirstVerseFifthSong">Потерял тебя и слился,</p>
+                <p class="FirstVerseFifthSong">А теперь он типо злится —</p>
+                <p class="FirstVerseFifthSong">Боже, чел прошу, заткнись.</p>
+                <p class="FirstVerseFifthSong">Мир реально так противен,</p>
+                <p class="FirstVerseFifthSong">Или просто я дебил?</p>
+                <p class="FirstVerseFifthSong">На деле, всё как обычно,</p>
+                <p class="FirstVerseFifthSong">Грущу лишь я часто слишком,</p>
+                <p class="FirstVerseFifthSong">А ты в ресторане с парнем,</p>
+                <p class="FirstVerseFifthSong">Мне снится то, как ты спишь с ним.</p>
+                <p class="FirstVerseFifthSong">Я чувствую себя лишним</p>
+                <p class="FirstVerseFifthSong">И утром, когда встаю лишь,</p>
+                <p class="FirstVerseFifthSong">Настрачиваю вирши,</p>
+                <p class="FirstVerseFifthSong">Поскольку я видел, как</p>
+                
+                <p class="DropFifthSong">[Припев]</p>
+                <p class="DropFifthSong">Ты снова снилась мне.</p>
+                <p class="DropFifthSong">Это из-за сил извне,</p>
+                <p class="DropFifthSong">Или я надумал сам,</p>
+                <p class="DropFifthSong">Что ты осталась в голове?</p>
+                <p class="DropFifthSong">Ты снова снилась мне</p>
+                <p class="DropFifthSong">В сладком сне,</p>
+                <p class="DropFifthSong">Там мы были радостней, чем здесь,</p>
+                <p class="DropFifthSong">И это даже не конец, ведь</p>
+                <p class="DropFifthSong">Ты снова снилась мне.</p>
+                <p class="DropFifthSong">Это из-за сил извне,</p>
+                <p class="DropFifthSong">Или я надумал сам,</p>
+                <p class="DropFifthSong">Что ты осталась в голове?</p>
+                <p class="DropFifthSong">Ты снова снилась мне</p>
+                <p class="DropFifthSong">В сладком сне,</p>
+                <p class="DropFifthSong">Там мы были радостней, чем здесь,</p>
+                <p class="DropFifthSong">И это даже не конец.</p>
+                
+                <p class="SecondVerseFifthSong">[Куплет]</p>
+                <p class="SecondVerseFifthSong">Я таю, стоит</p>
+                <p class="SecondVerseFifthSong">Тебя лишь вспомнить.</p>
+                <p class="SecondVerseFifthSong">Но знаю точно: того не стоят</p>
+                <p class="SecondVerseFifthSong">Эти мысли о тебе,</p>
+                <p class="SecondVerseFifthSong">Но я зависим,</p>
+                <p class="SecondVerseFifthSong">И во тьме</p>
+                <p class="SecondVerseFifthSong">Твой силуэт</p>
+                <p class="SecondVerseFifthSong">Мелькает ярко,</p>
+                <p class="SecondVerseFifthSong">Хоть и только в голове.</p>
+                <p class="SecondVerseFifthSong">Моих снов уже неделю не бывало</p>
+                <p class="SecondVerseFifthSong">Для кого-то это мало,</p>
+                <p class="SecondVerseFifthSong">Но без снов с тобой мне плохо,</p>
+                <p class="SecondVerseFifthSong">Терпеть ночь без них устал я —</p>
+                <p class="SecondVerseFifthSong">Теперь хочется хоть малость</p>
+                <p class="SecondVerseFifthSong">Насладиться, обнимая</p>
+                <p class="SecondVerseFifthSong">Тебя во сне, но</p>
+                <p class="SecondVerseFifthSong">Тебя здесь нет.</p>
+                <p class="SecondVerseFifthSong">Я теперь мечтаю лишь об одном:</p>
+                <p class="SecondVerseFifthSong">Детка, окажись сном хоть разок.</p>
+                <p class="SecondVerseFifthSong">Дай мне сделать хоть мазок</p>
+                <p class="SecondVerseFifthSong">На холсте</p>
+                <p class="SecondVerseFifthSong">В тетрадном листе.</p>
+                <p class="SecondVerseFifthSong">Мне приснишься — поверь,</p>
+                <p class="SecondVerseFifthSong">Я сделаю всё,</p>
+                <p class="SecondVerseFifthSong">Чтоб ты стала моей.</p>
+                
+                <p class="DropFifthSong">[Припев]</p>
+                <p class="DropFifthSong">Ты снова снилась мне.</p>
+                <p class="DropFifthSong">Это из-за сил извне,</p>
+                <p class="DropFifthSong">Или я надумал сам,</p>
+                <p class="DropFifthSong">Что ты осталась в голове?</p>
+                <p class="DropFifthSong">Ты снова снилась мне</p>
+                <p class="DropFifthSong">В сладком сне,</p>
+                <p class="DropFifthSong">Там мы были радостней, чем здесь,</p>
+                <p class="DropFifthSong">И это даже не конец, ведь</p>
+                <p class="DropFifthSong">Ты снова снилась мне.</p>
+                <p class="DropFifthSong">Это из-за сил извне,</p>
+                <p class="DropFifthSong">Или я надумал сам,</p>
+                <p class="DropFifthSong">Что ты осталась в голове?</p>
+                <p class="DropFifthSong">Ты снова снилась мне</p>
+                <p class="DropFifthSong">В сладком сне,</p>
+                <p class="DropFifthSong">Там мы были радостней, чем здесь,</p>
+                <p class="DropFifthSong">И это даже не конец.</p>
+                
+                <p class="DropFifthSong">[Аутро]</p>
+                <p class="DropFifthSong">Это просто мой сон.</p>
+                <p class="DropFifthSong">Это просто мой сон.</p>
+                <p class="DropFifthSong">Это просто мой сон.</p>
+                <p class="DropFifthSong">Это просто мой сон.</p>
+                <p class="DropFifthSong">Это просто мой сон.</p>
+                <p class="DropFifthSong">Это просто мой сон.</p>
+                <p class="DropFifthSong">Это просто мой сон.</p>
+                <p class="DropFifthSong">Это просто мой сон.</p>
+                <p class="DropFifthSong">Это просто мой сон.</p>
+                <p class="DropFifthSong">Это просто мой сон.</p>
+                <p class="DropFifthSong">Это просто мой сон.</p>
+                <p class="DropFifthSong">Это просто мой сон.</p>
+
+            <h2>Привязан</h2>
+            
+                <p class="IntroSixthSong">[Интро]</p>
+                <p class="IntroSixthSong">Я привязан к тебе, будто к камню, и падаю вниз.</p>
+                <p class="IntroSixthSong">Пейзажей красивых не надо — ты только вернись.</p>
+                <p class="IntroSixthSong">Пираньями жрёт меня мысль: когда-то любил,</p>
+                <p class="IntroSixthSong">Но, где ты теперь, не знаю примерно.</p>
+                <p class="IntroSixthSong">Открытая дверь похожа на стену.</p>
+                <p class="IntroSixthSong">От имени сердца скажу:</p>
+                <p class="IntroSixthSong">Я привязан к тебе. Прошу</p>
+                
+                <p class="FirstVerseSixthSong">[Куплет]</p>
+                <p class="FirstVerseSixthSong">Ты только ко мне приди.</p>
+                <p class="FirstVerseSixthSong">Столько камней в груди.</p>
+                <p class="FirstVerseSixthSong">А кругом нелюди,</p>
+                <p class="FirstVerseSixthSong">Нелюди, нелюди,</p>
+                <p class="FirstVerseSixthSong">Пара друзей —</p>
+                <p class="FirstVerseSixthSong">Остальное по мелочи.</p>
+                <p class="FirstVerseSixthSong">Нет даже мелочи:</p>
+                <p class="FirstVerseSixthSong">Слито всё в ноль.</p>
+                <p class="FirstVerseSixthSong">Я теряю контроль</p>
+                <p class="FirstVerseSixthSong">Над собой и словами,</p>
+                <p class="FirstVerseSixthSong">Теряю себя</p>
+                <p class="FirstVerseSixthSong">В наших воспоминаниях.</p>
+                <p class="FirstVerseSixthSong">Держите меня семеро, иначе я сломаюсь.</p>
+                <p class="FirstVerseSixthSong">Я холодный, как север,</p>
+                <p class="FirstVerseSixthSong">Но честно щас признаюсь:</p>
+            
+                <p class="DropSixthSong">[Припев]</p>
+                <p class="DropSixthSong">Я привязан к тебе</p>
+                <p class="DropSixthSong">И, наверно, канатом</p>
+                <p class="DropSixthSong">И не могу отпустить.</p>
+                <p class="DropSixthSong">Я привязан к тебе</p>
+                <p class="DropSixthSong">И, наверно, канатом</p>
+                <p class="DropSixthSong">На уровне шеи,</p>
+                <p class="DropSixthSong">Но падаю вниз.</p>
+                <p class="DropSixthSong">Я привязан к тебе,</p>
+                <p class="DropSixthSong">И, наверно, так надо.</p>
+                <p class="DropSixthSong">Но ты душишь меня</p>
+                <p class="DropSixthSong">И не слышишь меня —</p>
+                <p class="DropSixthSong">Это душит меня,</p>
+                <p class="DropSixthSong">Снова в ужасе я,</p>
+                <p class="DropSixthSong">Ну а как тут иначе?</p>
+            
+                <p class="SecondVerseSixthSong">[Куплет]</p>
+                <p class="SecondVerseSixthSong">Подскажи, если знаешь.</p>
+                <p class="SecondVerseSixthSong">Спаси жизнь, если можешь.</p>
+                <p class="SecondVerseSixthSong">Хотя ключ у меня от замка.</p>
+                <p class="SecondVerseSixthSong">И отныне, похоже, я</p>
+                <p class="SecondVerseSixthSong">Lil peep инсайд.</p>
+                <p class="SecondVerseSixthSong">Лил слёзы, будто гроза,</p>
+                <p class="SecondVerseSixthSong">Горю, как леса Сибири, со стыда.</p>
+                <p class="SecondVerseSixthSong">Я слит был, когда ты ушла,</p>
+                <p class="SecondVerseSixthSong">Но делаю вид, что всё как всегда.</p>
+                <p class="SecondVerseSixthSong">Я привязан, как в БДСМ, — я наказан,</p>
+                <p class="SecondVerseSixthSong">И госпожа боль меня вновь душит газом.</p>
+                <p class="SecondVerseSixthSong">Ворвусь на танцпол — никому не обязан,</p>
+                <p class="SecondVerseSixthSong">Воюю за всё, что уже не вернуть</p>
+                <p class="SecondVerseSixthSong">И боюсь потерять тебя,</p>
+                <p class="SecondVerseSixthSong">Злюсь обязательно,</p>
+                <p class="SecondVerseSixthSong">Когда отпущу — без понятия.</p>
+                <p class="SecondVerseSixthSong">Жаль, что уже потерял</p>
+                <p class="SecondVerseSixthSong">И лишь делаю вид,</p>
+                <p class="SecondVerseSixthSong">Что мы связаны, а не я.</p>
+                
+                <p class="DropSixthSong">[Припев]</p>
+                <p class="DropSixthSong">Я привязан к тебе</p>
+                <p class="DropSixthSong">И, наверно, канатом</p>
+                <p class="DropSixthSong">И не могу отпустить.</p>
+                <p class="DropSixthSong">Я привязан к тебе</p>
+                <p class="DropSixthSong">И, наверно, канатом</p>
+                <p class="DropSixthSong">На уровне шеи,</p>
+                <p class="DropSixthSong">Но падаю вниз.</p>
+                <p class="DropSixthSong">Я привязан к тебе,</p>
+                <p class="DropSixthSong">И, наверно, так надо.</p>
+                <p class="DropSixthSong">Но ты душишь меня</p>
+                <p class="DropSixthSong">И не слышишь меня —</p>
+                <p class="DropSixthSong">Это душит меня,</p>
+                <p class="DropSixthSong">Снова в ужасе я,</p>
+                <p class="DropSixthSong">Ну а как тут иначе?</p>
+
+            <h2>Улетела</h2>
+
+                <p class="DropSeventhSong">[Припев]</p>
+                <p class="DropSeventhSong">А ты улетела вдаль,</p>
+                <p class="DropSeventhSong">Словно птичка — я</p>
+                <p class="DropSeventhSong">Не могу тебя поймать:</p>
+                <p class="DropSeventhSong">Слишком быстрая.</p>
+                <p class="DropSeventhSong">Так хочу тебя обнять,</p>
+                <p class="DropSeventhSong">Но ты выстрелом</p>
+                <p class="DropSeventhSong">Пронеслась — ты где-то там,</p>
+                <p class="DropSeventhSong">А я выдохся,</p>
+                
+                <p class="FirstVerseSeventhSong">[Куплет]</p>
+                <p class="FirstVerseSeventhSong">Пока бежал за тобой во снах,</p>
+                <p class="FirstVerseSeventhSong">Видел похожих людей вокруг.</p>
+                <p class="FirstVerseSeventhSong">В видео, в профилях, в соцсетях —</p>
+                <p class="FirstVerseSeventhSong">Видимо, ты не вернёшься, друг.</p>
+                <p class="FirstVerseSeventhSong">Эти монологи с тобой в лс,</p>
+                <p class="FirstVerseSeventhSong">После которых попал в чс;</p>
+                <p class="FirstVerseSeventhSong">Пустые разговоры лишь о тебе</p>
+                <p class="FirstVerseSeventhSong">С кучей незнакомейших мне людей.</p>
+                <p class="FirstVerseSeventhSong">Откуда это всё?</p>
+                <p class="FirstVerseSeventhSong">Я окурок и не нужен —</p>
+                <p class="FirstVerseSeventhSong">Неужели весь исход</p>
+                <p class="FirstVerseSeventhSong">Полубрака-полудружбы?</p>
+                <p class="FirstVerseSeventhSong">Я бракованная игрушка,</p>
+                <p class="FirstVerseSeventhSong">Или боком изначально стояла ты?</p>
+                <p class="FirstVerseSeventhSong">И зачата любовь была</p>
+                <p class="FirstVerseSeventhSong">Не так, как нам надо бы?</p>
+                <p class="FirstVerseSeventhSong">Контакт удалён.</p>
+                <p class="FirstVerseSeventhSong">«Ну как так?» — удивлённо</p>
+                <p class="FirstVerseSeventhSong">Спросил я себя,</p>
+                <p class="FirstVerseSeventhSong">Потом выпил вино —</p>
+                <p class="FirstVerseSeventhSong">Так хотел узнать правду —</p>
+                <p class="FirstVerseSeventhSong">Сказал себе позже:</p>
+                <p class="FirstVerseSeventhSong">«Чел, ты не виновен»,</p>
+                <p class="FirstVerseSeventhSong">К тому же давно она</p>
+                
+                <p class="DropSeventhSong">[Припев]</p>
+                <p class="DropSeventhSong">Улетела вдаль,</p>
+                <p class="DropSeventhSong">Словно птичка — я</p>
+                <p class="DropSeventhSong">Не могу тебя поймать:</p>
+                <p class="DropSeventhSong">Слишком быстрая.</p>
+                <p class="DropSeventhSong">Так хочу тебя обнять,</p>
+                <p class="DropSeventhSong">Но ты выстрелом</p>
+                <p class="DropSeventhSong">Пронеслась — ты где-то там,</p>
+                <p class="DropSeventhSong">А я выдохся,</p>
+                <p class="DropSeventhSong">И ты улетела вдаль,</p>
+                <p class="DropSeventhSong">Словно птичка — я</p>
+                <p class="DropSeventhSong">Не могу тебя поймать:</p>
+                <p class="DropSeventhSong">Слишком быстрая.</p>
+                <p class="DropSeventhSong">Так хочу тебя обнять,</p>
+                <p class="DropSeventhSong">Но ты выстрелом</p>
+                <p class="DropSeventhSong">Пронеслась — ты где-то там,</p>
+                <p class="DropSeventhSong">А я выдохся.</p>
+                
+                <p class="SecondVerseSeventhSong">[Куплет]</p>
+                <p class="SecondVerseSeventhSong">Ведь понял я с возрастом:</p>
+                <p class="SecondVerseSeventhSong">Сложно гореть</p>
+                <p class="SecondVerseSeventhSong">Даже хворостом.</p>
+                <p class="SecondVerseSeventhSong">Сонным ходить сотни вёрст</p>
+                <p class="SecondVerseSeventhSong">И быть соткан из горьких слёз.</p>
+                <p class="SecondVerseSeventhSong">Грустить — это норма,</p>
+                <p class="SecondVerseSeventhSong">Но не дольше, чем любить,</p>
+                <p class="SecondVerseSeventhSong">И не по той же причине.</p>
+                <p class="SecondVerseSeventhSong">Опомнился:</p>
+                <p class="SecondVerseSeventhSong">Не забуду тебя,</p>
+                <p class="SecondVerseSeventhSong">Но не буду рыдать по ночам —</p>
+                <p class="SecondVerseSeventhSong">Уж не беспокойся.</p>
+                <p class="SecondVerseSeventhSong">Я убил всю печаль</p>
+                <p class="SecondVerseSeventhSong">И теперь я способен сказать:</p>
+                <p class="SecondVerseSeventhSong">Спасибо. Прощай.</p>
+                <p class="SecondVerseSeventhSong">Меня крутило, как камень пращёй,</p>
+                <p class="SecondVerseSeventhSong">Но вот теперь я нормальный — считай.</p>
+                <p class="SecondVerseSeventhSong">Все те загоны — обычный просчёт,</p>
+                <p class="SecondVerseSeventhSong">Я свалил из загона и сети порвал.</p>
+                <p class="SecondVerseSeventhSong">Теперь ты законно свободна,</p>
+                <p class="SecondVerseSeventhSong">А мир даже менее жалкий,</p>
+                <p class="SecondVerseSeventhSong">Чем до тебя.</p>
+                <p class="SecondVerseSeventhSong">Спасибо. Прощай.</p>
+                <p class="SecondVerseSeventhSong">Если ты улетела, скажу лишь: «Goodbye».</p>
+                
+                <p class="DropSeventhSong">[Припев]</p>
+                <p class="DropSeventhSong">А ты улетела вдаль,</p>
+                <p class="DropSeventhSong">Словно птичка — я</p>
+                <p class="DropSeventhSong">Не могу тебя поймать:</p>
+                <p class="DropSeventhSong">Слишком быстрая.</p>
+                <p class="DropSeventhSong">Так хочу тебя обнять,</p>
+                <p class="DropSeventhSong">Но ты выстрелом</p>
+                <p class="DropSeventhSong">Пронеслась — ты где-то там,</p>
+                <p class="DropSeventhSong">А я выдохся,</p>
+                <p class="DropSeventhSong">И ты улетела вдаль,</p>
+                <p class="DropSeventhSong">Словно птичка — я</p>
+                <p class="DropSeventhSong">Не могу тебя поймать:</p>
+                <p class="DropSeventhSong">Слишком быстрая.</p>
+                <p class="DropSeventhSong">Так хочу тебя обнять,</p>
+                <p class="DropSeventhSong">Но ты выстрелом</p>
+                <p class="DropSeventhSong">Пронеслась — ты где-то там,</p>
+                <p class="DropSeventhSong">А я выдохся.</p>
+        </main>
+
+        <footer>
+            &copy; Генерозов Сергей, ФБИ-33, 2 курс, 2025
+        </footer>
+
+    </body>
+</html>
