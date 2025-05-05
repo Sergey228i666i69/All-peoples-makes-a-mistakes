@@ -18,6 +18,13 @@ footer {
     padding: 15px; 
     font-size: 16pt;
     text-align: right;
+    position: fixed;
+    bottom: 0px;
+    right: 0px; left: 0px;
+}
+
+main {
+    margin: 10px 20px 55px;
 }
 
 a {
