@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генерозов Сергей Евгеньевич. Позиционирование</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon-32x32.png">
+    <link rel="icon" href="../favicon.ico">
+    <style>
+        div {
+            width: 300px;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            background-color: white;
+            border: 1px dotted rgb(0 128 0);
+            margin: 15px;
+        }
+
+        .position-relative {
+            position: relative;
+            left: 140px;
+            top: -127px;
+            z-index: -1;
+        }
+
+        .position-absolute {
+            position: absolute;
+            left: 300px;
+            transition: 1s;
+        }
+
+        .position-absolute:hover {
+            scale: 120%;
+            background-color: rgb(255, 230, 230);
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+    </style>
+
+</head>
+
+
+
+<body>
+    
+    <header>
+        НГТУ, ФБ, Лабораторная работа 4
+    </header>
+
+    <main>
+
+        <div>static</div>
+        <div>static</div>
+        <div class="position-relative">relative</div>
+        <div>static</div>
+        <div>static</div>
+        <div class="position-absolute">absolute</div>
+        <div>static</div>
+        <div>static</div>
+        <div>static</div>
+        <div>static</div>
+
+    </main>
+
+    <footer>
+        &copy; Генерозов Сергей, ФБИ-33, 2 курс, 2025
+    </footer>
+
+</body>
+
+</html>
