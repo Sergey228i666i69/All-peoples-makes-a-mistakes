@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генерозов Сергей Евгеньевич. Погода</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon-32x32.png">
+    <link rel="icon" href="../favicon.ico">
+    <style>
+        .weather-block {
+            border: 1px solid #333;
+            padding: 15px;
+            width: 320px;
+            margin-top: 20px;
+            background-color: #eef;
+            font-family: Arial, sans-serif;
+        }
+        .weather-block h3 {
+            margin-top: 0;
+        }
+    </style>
+    <script>
+        function formatDate(dateStr) {
+            const parts = dateStr.split('-');
+            return parts[2] + '.' + parts[1] + '.' + parts[0];
+        }
+
+        function getWeather() {
+            const url = 'https://api.open-meteo.com/v1/forecast?latitude=55.0415&longitude=82.9346&hourly=temperature_2m&timezone=Asia%2FBangkok';
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    const hours = data.hourly.time;
+                    const temps = data.hourly.temperature_2m;
+
+                    const today = new Date().toISOString().slice(0, 10);
+                    const formattedDate = formatDate(today);
+
+                    const timesToFind = [`${today}T08:00`, `${today}T12:00`, `${today}T20:00`];
+                    let result = '';
+
+                    for (let i = 0; i < timesToFind.length; i++) {
+                        let index = hours.indexOf(timesToFind[i]);
+                        if (index !== -1) {
+                            result += `<p>${timesToFind[i].slice(11, 16)} — ${temps[index]} °C</p>`;
+                        } else {
+                            result += `<p>${timesToFind[i].slice(11, 16)} — нет данных</p>`;
+                        }
+                    }
+
+                    document.getElementById('weather-info').innerHTML = `
+                        <div class="weather-block">
+                            <h3>Погода в Новосибирске на ${formattedDate}</h3>
+                            ${result}
+                            <p><small>Источник: <a href="https://open-meteo.com/" target="_blank">open-meteo.com</a></small></p>
+                        </div>
+                    `;
+                })
+                .catch(error => {
+                    document.getElementById('weather-info').innerHTML = '<p style="color:red;">Ошибка загрузки погоды</p>';
+                });
+        }
+    </script>
+</head>
+<body>
+    <header>НГТУ, ФБ, Лабораторная работа 7</header>
+
+    <main>
+        <button onclick="getWeather()">Показать погоду в Новосибирске</button>
+        <div id="weather-info"></div>
+    </main>
+
+    <footer>
+        &copy; Генерозов Сергей, ФБИ-33, 2 курс, 2025
+    </footer>
+
+</body>
+
+</html>
