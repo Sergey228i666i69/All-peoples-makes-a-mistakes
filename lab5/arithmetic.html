@@ -15,6 +15,14 @@
             let result=a+b;
             alert('Сумма ' + a + ' и ' + b + ' равна ' + result); 
         }
+        function showAuthor() {
+            let author = 'Автор страницы: \nГенерозов Сергей Евгеньевич';
+            alert(author);
+        }
+        function Ser() {
+            let ser = 'Приветствую вас на странице Генерозова Сергея. \nВсем хорошего дня и приятного аппетита.'
+            alert(ser)
+        }
     </script>
     <style>
         .message {
@@ -39,10 +47,10 @@
 
     <main>
         <div class="message" onclick="showSum()">Сколько будет 5154+7891?</div>
-        <div class="message">Узнать, кто автор страницы</div>
+        <div class="message" onclick="showAuthor()">Узнать, кто автор страницы</div>
     </main>
 
-    <footer>
+    <footer style="cursor: pointer;" ondblclick="Ser()">
         &copy; Генерозов Сергей, ФБИ-33, 2 курс, 2025
     </footer>
 
