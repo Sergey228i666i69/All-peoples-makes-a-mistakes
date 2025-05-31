@@ -73,6 +73,38 @@
             let result = a / b;
             alert (a + ' / ' + b + ' = ' + result);
         }
+        function step() {
+            let inputA=document.getElementById('numberA');
+            let inputB=document.getElementById('numberB');
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
+            if (a==0 && b==0) {
+                alert('Значения не должны быть равны нулю');
+                inputA.style.color = 'black';
+                inputA.style.backgroundColor = 'red';
+                inputB.style.color = 'black';
+                inputB.style.backgroundColor = 'red';
+                return;    
+            }
+            if (isNaN(a)) {
+                alert('В поле есть нечисловое значение');
+                inputA.style.color = 'black';
+                inputA.style.backgroundColor = 'red';
+                return;    
+            }
+            if (isNaN(b)) {
+                alert('В поле есть нечисловое значение');
+                inputB.style.color = 'black';
+                inputB.style.backgroundColor = 'red';
+                return;    
+            }
+            inputA.style.color = '';
+            inputA.style.backgroundColor = '';
+            inputB.style.color = '';
+            inputB.style.backgroundColor = '';   
+            let result = a**b;
+            alert (a+' в степени '+ b +' равно ' + result);
+        }
     </script>
     <style>
         .message {
@@ -104,6 +136,7 @@
         <div class="message" onclick="razn()">Найти разность чисел</div>
         <div class="message" onclick="proiz()">Найти произведение</div>
         <div class="message" onclick="showDiv()">Найти отношение чисел</div>
+        <div class="message" onclick="step()">Возведение в степень</div>
 
     </main>
 
