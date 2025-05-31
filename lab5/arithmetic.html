@@ -41,6 +41,38 @@
             let result = a * b;
             alert ('Произведение ' + a + ' и ' + b + ' равна ' + result);
         }
+        function showDiv() {
+            let inputA=document.getElementById('numberA');
+            let inputB=document.getElementById('numberB');
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
+            if (b==0) {
+                alert('На ноль делить нельзя!')
+                inputB.focus();
+                inputB.select();
+                inputB.style.color = 'red';
+                inputB.style.borderColor = 'red';
+                return;
+            }
+            if (isNaN(a)) {
+                    alert('Введите числовое значение в первое поле');
+                    inputA.style.color = 'black';
+                    inputA.style.backgroundColor = 'red';
+                    return;
+                }
+             if (isNaN(b)) {
+                alert('Введите числовое значение во второе поле');
+                inputB.style.color = 'black';
+                inputB.style.backgroundColor = 'red';
+                return;
+            }
+            inputA.style.color = '';
+            inputA.style.backgroundColor = '';
+            inputB.style.color = '';
+            inputB.style.backgroundColor = '';
+            let result = a / b;
+            alert (a + ' / ' + b + ' = ' + result);
+        }
     </script>
     <style>
         .message {
@@ -52,6 +84,7 @@
             text-align: center;
             padding: 5px;
             cursor: pointer;
+            margin: 5px;
         }
     </style>
 </head>
@@ -70,6 +103,7 @@
         <div class="message" onclick="showAuthor()">Узнать, кто автор страницы</div>
         <div class="message" onclick="razn()">Найти разность чисел</div>
         <div class="message" onclick="proiz()">Найти произведение</div>
+        <div class="message" onclick="showDiv()">Найти отношение чисел</div>
 
     </main>
 
