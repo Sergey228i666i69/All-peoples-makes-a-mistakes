@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генерозов Сергей Евгеньевич. Дополнительное задание</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon-32x32.png">
+    <link rel="icon" href="../favicon.ico">
+    <script>
+        function changeFilter(event) {
+            let img = document.getElementById("image");
+            let info = document.getElementById("filterInfo");
+
+            let x = event.offsetX;
+            let width = img.clientWidth;
+            let strength = x / width;
+
+            let filter = 'blur(' + (strength * 10).toFixed(1) + 'px)';
+            let text = 'blur(' + (strength * 10).toFixed(1) + 'px)';
+
+            if (event.ctrlKey) {
+                filter += ' grayscale(' + strength.toFixed(2) + ')';
+                text += ' + grayscale(' + strength.toFixed(2) + ')';
+            }
+
+            if (event.altKey) {
+                let hue = Math.round(strength * 360);
+                filter += ' hue-rotate(' + hue + 'deg)';
+                text += ' + hue-rotate(' + hue + 'deg)';
+            }
+
+            if (event.shiftKey) {
+                filter += ' sepia(' + strength.toFixed(2) + ')';
+                text += ' + sepia(' + strength.toFixed(2) + ')';
+            }
+
+            img.style.filter = filter;
+            info.innerText = 'Фильтр: ' + text;
+        }
+    </script>
+</head>
+
+
+<body>
+    
+    <header>
+        НГТУ, ФБ, Лабораторная работа 5
+    </header>
+
+    <main>
+        <p>Наведите мышку на картинку. Чем правее — тем сильнее эффект blur.<br>
+        Удерживайте клавиши Ctrl, Alt или Shift — появятся другие фильтры.</p>
+
+        <img src="Andrey.png" id="image" onmousemove="changeFilter(event)" width="700">
+        <div id="filterInfo"></div>
+    </main>
+
+    <footer>
+        &copy; Генерозов Сергей, ФБИ-33, 2 курс, 2025
+    </footer>
+
+</body>
+
+</html>
