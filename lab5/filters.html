@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генерозов Сергей Евгеньевич. Фильтры</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon-32x32.png">
+    <link rel="icon" href="../favicon.ico">
+    <script>
+        function blurChange() {
+            let value = document.getElementById('blurValue').value + 'px';
+            document.getElementById('blurOutput').innerText = value;
+            document.getElementById('Image_1').style.filter = 'blur(' + value + ')';
+        }
+    </script>
+</head>
+
+
+<body>
+    
+    <header>
+        НГТУ, ФБ, Лабораторная работа 5
+    </header>
+
+    <main>
+        <div style="float: left;">
+            Фильтр blur:
+            <input type="range" min="0" max="20" value="0" onchange="blurChange()" id="blurValue">
+            <span id="blurOutput">0px</span>
+            <div><img src="Andrey.png" id="Image_1" width="250"></div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; Генерозов Сергей, ФБИ-33, 2 курс, 2025
+    </footer>
+
+</body>
+
+</html>
