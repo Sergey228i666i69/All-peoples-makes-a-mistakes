@@ -19,6 +19,36 @@
             document.getElementById('brightnessOutput').innerText = value;
             document.getElementById('Image_2').style.filter = 'brightness(' + value + ')';
         }
+        function contrastChange() {
+            let value = document.getElementById('contrastValue').value + '%';
+            document.getElementById('contrastOutput').innerText = value;
+            document.getElementById('Image_3').style.filter = 'contrast(' + value + ')';
+        }
+        function grayscaleChange() {
+            let value = document.getElementById('grayscaleValue').value + '%';
+            document.getElementById('grayscaleOutput').innerText = value;
+            document.getElementById('Image_4').style.filter = 'grayscale(' + value + ')';
+        }
+        function hueRotateChange() {
+            let value = document.getElementById('hueRotateValue').value + 'deg';
+            document.getElementById('hueRotateOutput').innerText = value;
+            document.getElementById('Image_5').style.filter = 'hue-rotate(' + value + ')';
+        }
+        function invertChange() {
+            let value = document.getElementById('invertValue').value + '%';
+            document.getElementById('invertOutput').innerText = value;
+            document.getElementById('Image_6').style.filter = 'invert(' + value + ')';
+        }
+        function saturateChange() {
+            let value = document.getElementById('saturateValue').value + '%';
+            document.getElementById('saturateOutput').innerText = value;
+            document.getElementById('Image_7').style.filter = 'saturate(' + value + ')';
+        }
+        function sepiaChange() {
+            let value = document.getElementById('sepiaValue').value + '%';
+            document.getElementById('sepiaOutput').innerText = value;
+            document.getElementById('Image_8').style.filter = 'sepia(' + value + ')';
+        }
     </script>
     <style>
         div {
@@ -41,12 +71,18 @@
             <span id="blurOutput">0px</span>
             <div><img src="Andrey.png" id="Image_1" width="250"></div>
         </div>
-         <div style="float: left;">
+        <div style="float: left;">
             Фильтр brightness:
             <input type="range" min="0" max="500" value="100" onchange="brightnessChange()" id="brightnessValue">
             <span id="brightnessOutput">100%</span>
             <div><img src="Andrey.png" id="Image_2" width="250"></div>
-         </div>
+        </div>
+        <div>
+            Фильтр contrast:
+            <input type="range" min="0" max="500" value="100" onchange="contrastChange()" id="contrastValue">
+            <span id="contrastOutput">100%</span>
+            <div><img src="shield.webp" id="Image_3" width="250"></div>
+        </div>
     </main>
 
     <footer>
