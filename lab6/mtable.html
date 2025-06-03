@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генерозов Сергей Евгеньевич. Таблица умножения</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon-32x32.png">
+    <link rel="icon" href="../favicon.ico">
+    <script>
+        function showMutipleTable(number = 7, start = 1, end = 10) {
+            if (start > end) {
+                [start, end] = [end, start];
+            }
+            let tbl = document.getElementById('mtable');
+            tbl.innerHTML = `<h1>Таблица умножения на ${number}</h1>`;
+            for (let i = start; i <= end; i++) {
+                let s = `<div>${i} × ${number} = ${i * number}</div>`;
+                tbl.innerHTML += s;
+            }
+        }
+        function updateTable() {
+            let number = parseInt(document.getElementById('number').value);
+            let start = parseInt(document.getElementById('start').value);
+            let end = parseInt(document.getElementById('end').value);
+
+            if (isNaN(number)) number = 7;
+            if (isNaN(start)) start = 1;
+            if (isNaN(end)) end = 10;
+            showMutipleTable(number, start, end);
+        }
+    </script>
+    <style>
+        #mtable {
+            max-width: 320px;
+            margin: 30px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .controls {
+            max-width: 320px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .control-group {
+            margin: 10px 0;
+        }
+        .control-group label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+            margin-right: 10px;
+        }
+        .controls input {
+            width: 80px;
+            padding: 5px;
+        }
+        .controls button {
+            padding: 8px 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+
+<body onload="showMutipleTable()">
+    
+    <header>
+        НГТУ, ФБ, Лабораторная работа 6
+    </header>
+
+    <main>
+        <div id="mtable"></div>
+        <div class="controls">
+            <div class="control-group">
+                <label for="number">Умножить на:</label>
+                <input type="number" id="number" value="7">
+            </div>
+            <div class="control-group">
+                <label for="start">Начать с:</label>
+                <input type="number" id="start" value="1">
+            </div>
+            <div class="control-group">
+                <label for="end">Закончить на:</label>
+                <input type="number" id="end" value="10">
+            </div>
+            <button onclick="updateTable()">Построить таблицу</button>
+        </div>
+    </main>
+
+    <footer>
+        &copy; Генерозов Сергей, ФБИ-33, 2 курс, 2025
+    </footer>
+
+</body>
+
+</html>
