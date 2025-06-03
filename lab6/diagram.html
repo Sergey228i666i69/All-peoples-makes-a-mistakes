@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генерозов Сергей Евгеньевич. Диаграмма</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon-32x32.png">
+    <link rel="icon" href="../favicon.ico">
+    <script>
+        function showDiagram() {
+            let data = [36, 86, 55, 28, 92, 60, 41, 17, 9, 43];
+            let colors = ['red', 'green', 'black', 'gray', 'yellow', 'purple', 'brown', 'pink', 'indigo', 'aqua'];
+            let bars = document.getElementsByClassName('bar');
+            const diag = document.getElementById('diag');
+            const diagStyle = getComputedStyle(diag);
+            const padding = parseFloat(diagStyle.paddingTop) + parseFloat(diagStyle.paddingBottom);
+            const diagHeight = diag.clientHeight - padding;
+            const maxData = Math.max(...data);
+            const k = diagHeight / maxData * 0.9;
+            for(let i = 0; i < data.length; i++) {
+                const height = k * data[i];
+                bars[i].style.height = height + 'px';
+                bars[i].style.backgroundColor = colors[i % colors.length];
+                bars[i].innerHTML = `<div class="value">${data[i]}</div>`;
+            }
+        }
+    </script>
+    <style>
+        #diag {
+            display: flex;
+            align-items: flex-end;
+            height: 330px;
+            gap: 15px;          
+            padding: 25px;
+            margin: 30px auto;
+            max-width: 500px;
+            background: #f8f9fa;
+            border: 5px solid black;
+            border-radius: 15px  ;
+        }
+        .bar {
+            width: 40px;
+            transition: height 0.4s ease;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            border-radius: 4px 4px 0 0;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        .value {
+            color: white;
+            font-family: Arial;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px black;
+        }
+    </style>
+</head>
+
+
+<body onload="showDiagram()">
+    
+    <header>
+        НГТУ, ФБ, Лабораторная работа 6
+    </header>
+
+    <main>
+        <div id="diag">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; Генерозов Сергей, ФБИ-33, 2 курс, 2025
+    </footer>
+
+</body>
+
+</html>
