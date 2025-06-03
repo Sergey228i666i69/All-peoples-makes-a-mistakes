@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генерозов Сергей Евгеньевич. Список книг</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon-32x32.png">
+    <link rel="icon" href="../favicon.ico">
+    <script src="books.js"></script>
+    <script>
+        function showBooks() {
+            const bookList = document.getElementById('bookList');
+            bookList.innerHTML = '';
+            
+            for(let i = 0; i < books.length; i++) {
+                const book = books[i];
+                const classes = [
+                    'book-item',
+                    book.bestseller ? 'bestseller' : '',
+                    !book.available ? 'out-of-stock' : ''
+                ].join(' ');
+
+                bookList.innerHTML += `
+                    <div class="${classes}">
+                        <div>
+                            <b>${book.author}.</b>
+                            <i>${book.name}.</i>
+                            &mdash; ${book.publicationYear}
+                            <span class="price">${book.price} ₽</span>
+                        </div>
+                        ${book.bestseller ? 
+                            '<div class="book-meta"> Бестселлер</div>' : ''}
+                    </div>
+                `;
+            }
+        }
+    </script>
+    <style>
+        #bookList {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .book-item {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-left: 4px solid transparent;
+            transition: transform 0.2s;
+        }
+        .book-item:hover {
+            transform: translateX(5px);
+        }
+        .bestseller {
+            border-left-color: #ffd700;
+            background: #fff9e6;
+        }
+        .out-of-stock {
+            opacity: 0.6;
+            position: relative;
+        }
+        .out-of-stock::after {
+            content: "Нет в наличии";
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: #ff4444;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+        }
+        .price {
+            color: #2ecc71;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .book-meta {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+
+
+<body onload="showBooks()">
+    
+    <header>
+        НГТУ, ФБ, Лабораторная работа 6
+    </header>
+
+    <main>
+        <h1>Список книг</h1>
+        <div id="bookList"></div>
+    </main>
+
+    <footer>
+        &copy; Генерозов Сергей, ФБИ-33, 2 курс, 2025
+    </footer>
+
+</body>
+
+</html>
