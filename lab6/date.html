@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генерозов Сергей Евгеньевич. Дата-время</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon-32x32.png">
+    <link rel="icon" href="../favicon.ico">
+     <style>
+        .date-block {
+            margin: 15px 0;
+            padding: 10px;
+            border-left: 4px solid #4a90e2;
+            background: #f8f9fa;
+        }
+    </style>
+    <script>
+        function showDate() {
+            const locales = [
+                {name: 'русской', code: 'ru-RU'},
+                {name: 'американской', code: 'en-US'},
+                {name: 'немецкой', code: 'de-DE'},
+                {name: 'японской', code: 'ja-JP'},
+                {name: 'французской', code: 'fr-FR'}
+            ];
+            let output = '';
+            const today = new Date();        
+            locales.forEach(locale => {
+                const options = {
+                    year: 'numeric',
+                    month: '2-digit',
+                    day: '2-digit',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit',
+                    hour12: false
+                };    
+                const dateTime = today.toLocaleString(locale.code, options);
+                output += `
+                    <div class="date-block">
+                        Дата и время для ${locale.name} локали: 
+                        ${dateTime.replace(', ', ', ')}
+                    </div>
+                `;
+            });
+            document.getElementById('current-date').innerHTML = output;
+        }
+        function changeColors() {
+            const header = document.getElementsByTagName('header')[0];
+            const rgb = `rgb(${Math.random()*255}, ${Math.random()*255}, ${Math.random()*255})`;
+            header.style.color = rgb
+        }
+        function startChangeColors() {
+            setInterval(changeColors, 1000)
+        }
+    </script>
+</head>
+
+
+<body onload="showDate()">
+    
+    <header>
+        НГТУ, ФБ, Лабораторная работа 6
+    </header>
+
+    <main>
+        <div id="current-date"></div>
+        <div>
+            <button onclick="startChangeColors()">Старт</button>
+            <button onclick="stopChangeColors()" >Стоп</button>
+        </div>
+    </main>
+
+    <footer>
+        &copy; Генерозов Сергей, ФБИ-33, 2 курс, 2025
+    </footer>
+
+</body>
+
+</html>
